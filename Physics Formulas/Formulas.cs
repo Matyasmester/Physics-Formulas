@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Physics_Formulas
 {
-    public class Formulas
+    class Formulas
     {
         public double calculateVelocity(double s, double t)
         {
@@ -24,6 +24,12 @@ namespace Physics_Formulas
         {
             double W = U * I * t;
             return W;
+        }
+
+        public double calculateElectricPerformance(double P, double t)
+        {
+            double E = P * t;
+            return E;
         }
     }
 }
